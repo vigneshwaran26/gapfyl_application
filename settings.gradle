@@ -1,0 +1,9 @@
+rootProject.name = 'gapfyl_application'
+include 'core'
+include 'rest-api'
+include 'rest-api:src:test'
+findProject(':rest-api:src:test')?.name = 'test'
+include 'rest-api:src:test'
+findProject(':rest-api:src:test')?.name = 'test'
+include 'test'
+

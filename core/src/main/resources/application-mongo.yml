@@ -1,0 +1,76 @@
+spring:
+  profiles: local
+  data:
+    mongodb:
+      uri: mongodb+srv://gapfyl_development:jxXCiZu78R4n6aKp@cluster0.sg7l9.mongodb.net/gapfyl_development?retryWrites=true&w=majority
+
+client:
+  origin: http://localhost:3008
+
+swagger:
+  oauth:
+    server:
+      url: http://localhost:8085
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA53WYTDPOCFCLNUJP
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+    s3:
+      bucket:
+        in: gapfyl-education-assets-in
+        out: gapfyl-education-assets-out
+
+razorpay:
+  url: https://api.razorpay.com/v1
+  key_id: rzp_live_B9vIAAuQg8UuA5
+  key_secret: NRmtGlJLvPKyZoQJbdN5Hj7c
+
+---
+
+spring:
+  profiles: development
+  data:
+    mongodb:
+      uri: mongodb+srv://gapfyl_development:jxXCiZu78R4n6aKp@cluster0.sg7l9.mongodb.net/gapfyl_development?retryWrites=true&w=majority
+
+client:
+  origin: https://www.gapfyl.com
+
+swagger:
+  oauth:
+    server:
+      url: https://www.gapfyl.com
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA53WYTDPOCFCLNUJP
+      secret-key: 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
+    region:
+      static: ap-south-1
+    stack:
+      auto: false
+    s3:
+      bucket:
+        in: gapfyl-education-assets-in
+        out: gapfyl-education-assets-out
+
+razorpay:
+  url: https://api.razorpay.com/v1
+  key_id: rzp_live_B9vIAAuQg8UuA5
+  key_secret: NRmtGlJLvPKyZoQJbdN5Hj7c
+
+---
+
+spring:
+  profiles: production
+  data:
+    mongodb:
+      uri: mongodb://localhost:29019/gapfyl_production
+

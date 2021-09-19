@@ -1,0 +1,47 @@
+buildscript {
+
+	ext {
+		springBootVersion = '2.3.3.RELEASE'
+	}
+
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+	}
+	dependencies {
+		classpath "gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.22.1"
+	}
+}
+
+plugins {
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+subprojects {
+
+	group = 'com.gapfyl'
+	version = '0.0.1-SNAPSHOT'
+	sourceCompatibility = '11'
+
+	apply plugin: 'java'
+	apply plugin: 'io.spring.dependency-management'
+	apply plugin: 'java-library'
+	apply plugin: 'idea'
+
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+
+	dependencies {
+
+		implementation 'org.springframework.security.oauth:spring-security-oauth2:2.5.0.RELEASE'
+		implementation 'org.springframework.boot:spring-boot-starter-security:2.3.3.RELEASE'
+	}
+	
+}
+
+
+

@@ -1,0 +1,24 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
+
+  profiles:
+    include: mongo
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gapfyl.official@gmail.com
+    password: GapFyl@123
+    smtp:
+      auth: true
+      starttls:
+        enable: true
+    transport:
+      protocol: smtp
+    debug: true
+
+server:
+  port: 8085

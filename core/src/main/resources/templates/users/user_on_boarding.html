@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, user-scalable=yes" />
+    <meta content="GapFyl | Social Learning Platform" name="description" />
+    <meta content="GapFyl" name="author" />
+    <meta name="MobileOptimized" content="320" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body style="font-size: 17px; font-weight: 400; background-color: #fafafa; font-family: 'Montserrat', sans-serif;">
+
+    <div style="position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); margin:0;">
+        <div style="height: 105px; background-color: #dbdbdb;">
+        </div>
+        <div style="padding: 2rem 2.75rem;">
+            <div style="text-align: center;">
+                <span style="font-size: 25px; font-weight: 500;"> WELCOME </span>
+            </div>
+            <div style="margin-top: 1.75rem;">
+                We're excited to have you get started. First, you need to confirm your email id. Just press the button
+                below.
+            </div>
+            <div style="margin-top: 1.75rem; text-align: center;">
+                <a th:href="${activation_link}" style="-webkit-appearance: button; -moz-appearance: button; appearance: button; text-decoration: none; color: initial;">
+                    <button type="button" style="width: 210px; padding: 5px; height: 45px; cursor: pointer; border-radius: 5px; background-color: white; border: 1px solid black;">
+                        <span style="font-size: 19px; font-weight: 500;"> Confirm Account </span>
+                    </button>
+                </a>
+            </div>
+            <div style="margin-top: 1.75rem;">
+                If you have any queries, please be free by reply to this mail - we're always happy to help you out.
+            </div>
+            <div style="margin-top: 1.75rem;">
+                <span style="font-size: 17px; font-weight: 500;">Cheers,</span> <br/>
+                <span>Gapfyl Team</span>
+            </div>
+        </div>
+        <div style="height: 65px; padding-top: 1.5rem; text-align: center; background-color: #dbdbdb;">
+            <div style="text-align: center;">
+                <div style="font-size: 19px; font-weight: 500;">
+                    Need more help?
+                </div>
+                <div>
+                    We're here to talk
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

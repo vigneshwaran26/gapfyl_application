@@ -1,0 +1,37 @@
+    plugins {
+    id 'java'
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.projectlombok:lombok:1.18.14'
+    annotationProcessor 'org.projectlombok:lombok:1.18.14'
+
+    implementation 'org.hibernate:hibernate-validator:6.1.6.Final'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.3.4.RELEASE'
+    implementation 'commons-io:commons-io:2.8.0'
+
+    implementation 'com.amazonaws:aws-java-sdk-s3:1.11.1004'
+
+    compile group: 'com.stripe', name: 'stripe-java', version:'20.52.0'
+    compile group: 'com.razorpay', name: 'razorpay-java', version: '1.3.9'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-mail', version: '2.3.4.RELEASE'
+    compile group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.0.11.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.4.0'
+    compile group: 'org.springframework.data', name: 'spring-data-mongodb', version: '3.0.4.RELEASE'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.2.1'
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+    compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.1'
+    compile group: 'javax.activation', name: 'activation', version: '1.1'
+
+    //compile('javax.xml.bind:jaxb-api:2.3.0')
+    //compile('javax.activation:activation:1.1')
+    //compile('org.glassfish.jaxb:jaxb-runtime:2.3.0')
+
+}
